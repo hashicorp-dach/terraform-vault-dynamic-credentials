@@ -14,13 +14,13 @@ You will need root aws credentials with the ability to creat IAM Accounts to con
 
 Once all Variables are configured, configure the Vault address and token as environmental variables and apply the configuration within 
 
-'''
+```
 cd trust/
 export VAULT_ADDR=https://VAULT_ADDRESS_GOES_HERE:8200
 export VAULT_TOKEN=VAULT_TOKEN_GOES_HERE
 terraform init
 terraform apply
-'''
+```
 
 ## TFC Setup
 
