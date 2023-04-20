@@ -1,14 +1,14 @@
 # Terraform Dynamic Credential Injection using Vault
-This is a tutorial focusing on the Vault Integration of the (Dynamic Credentials)[https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/vault-configuration] feature in Terraform Cloud. At the time of writing, Terraform Enterprise only supports the K/V configuration in this example. 
+This is a tutorial focusing on the Vault Integration of the [Dynamic Credentials](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/vault-configuration) feature in Terraform Cloud. At the time of writing, Terraform Enterprise only supports the K/V configuration in this example. 
 
 ## Vault Setup
 
 It makes sense to configure Vault first, as it will allow the Terraform Configuration to immediately work. 
 
-You will need a Vault cluster which is acessible by your Terraform instance. For this example I used a development size cluster on (HCP Vault)[https://portal.cloud.hashicorp.com/].
+You will need a Vault cluster which is acessible by your Terraform instance. For this example I used a development size cluster on [HCP Vault](https://portal.cloud.hashicorp.com/).
 
 In the trust/variables.tf file you then need to enter your Terraform Organization, Project, and Workspace. If you wish to enable multiple workspaces to use the same role, wildcards can be used for Projects and Workspaces. 
-(Workload Identity JWT Reference)[https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens]: Here you can see how the user_claim can be modified to allow for different levels of granularity in the identity of the JWT. The Default, and most granular option, providing the highest level of Auditability is terraform_full_workspace.
+[Workload Identity JWT Reference](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens): Here you can see how the user_claim can be modified to allow for different levels of granularity in the identity of the JWT. The Default, and most granular option, providing the highest level of Auditability is terraform_full_workspace.
 
 You will need root aws credentials with the ability to creat IAM Accounts to configure the AWS Secrets engine. These can be rotated transparently afterwards.
 
