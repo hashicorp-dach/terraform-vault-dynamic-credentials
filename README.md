@@ -29,7 +29,8 @@ On Terraform, all you need to do is create a VCS-Backed Workspace, and connect i
 
 Then configure the Variables as shown below, filling in your VaultAddress/Namespace/Role. 
 
-![image](https://user-images.githubusercontent.com/8341286/233312425-6b0d4337-f7b7-438b-9549-daa52394b627.png)
+![image](https://user-images.githubusercontent.com/8341286/235867612-c5e02afd-c91a-4622-bbeb-2d13701af043.png)
+
 
 Once the VCS Repo is connected, and the Variables configured, a run can be started. During the run, terraform will connect to Vault and fetch the credentials neede to configure the provider via the datasources. 
 
