@@ -1,5 +1,5 @@
 # Terraform Dynamic Credential Injection using Vault
-This is a tutorial focusing on the Vault Integration of the [Dynamic Credentials](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/vault-configuration) feature in Terraform Cloud. At the time of writing, Terraform Enterprise only supports the K/V configuration in this example. 
+This is a tutorial focusing on the Vault Integration of the [Dynamic Credentials](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/vault-backed/aws-configuration) feature in Terraform Cloud. At the time of writing, Terraform Enterprise only supports the K/V configuration in this example. 
 
 ## Vault Setup
 

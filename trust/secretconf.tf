@@ -2,6 +2,7 @@
 resource "vault_aws_secret_backend" "aws" {
   access_key = "AWS access key"
   secret_key = "AWS secret key"
+  default_lease_ttl_seconds= 120
 }
 
 resource "vault_aws_secret_backend_role" "role" {
